@@ -29,17 +29,23 @@ class Mano {
         this.getEscalera(this.cartaAlta)
         if (this.escalera && this.palo && this.cartaAlta.valor === 14) {
             this.render('escaleraReal')
+            this.jugada = 'Escalera Real!!!'
         } else if (this.escalera && this.palo) {
             this.render('escaleraColor')
+            this.jugada = 'Escalera Color!'
         } else if (this.escalera && !this.palo) {
             this.render('escalera')
+            this.jugada = 'Escalera!'
         } else if (!this.escalera && this.palo) {
             this.render('color')
+            this.jugada = 'Color!'
         } else {
             if (!this.iguales) {
                 this.render('cartaAlta')
+                this.jugada = 'Carta Alta'
             } else {
                 this.render('iguales')
+                this.jugada = this.iguales
             }
         }
         this.contador = 0

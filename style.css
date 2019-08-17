@@ -9,14 +9,14 @@
 }
 
 body {
-    background-color: #3c3c44;
+    background-color: #28a745;
 }
 
 .btn-gethand {
     margin: 2rem;
     padding: .5rem .7rem;
     border: none;
-    background-color: rgb(75, 216, 46)
+    background-color: #343a40
 }
 
 .container-hand {
